@@ -7,15 +7,6 @@ body{
     background-color: rgb(245, 248, 251);
     
 }
-.main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    min-height: 100vh;
-    height: 100%;
-}
 .main__container{
     padding: 5rem 3rem;
     border-radius: 2rem;
@@ -24,10 +15,11 @@ body{
     justify-content: center;
     flex-direction: column;
     margin: 0 auto;
+    text-align: center;
 }
 .main__timer {
     
-    font-size: 15rem;
+    font-size: 16rem;
     font-weight: regular;
     color: #D1D4DF;
 }
@@ -36,7 +28,6 @@ body{
     justify-content: space-around;
 }
 .actions a{
-    
     text-decoration: none;
     user-select: none;
     color: #8190a4;
@@ -58,33 +49,57 @@ body{
     background-color: #4c5a64;
 }
 
-@media(max-width:560px){
+@media(max-width:1000px){
     .main__container{
-        padding: 5rem 1rem;
-        border-radius: 2rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        margin: 0 auto;
+        padding: 5% 5%;
     }
     .main__timer {
-    
-        font-size: 7rem;
-        font-weight: regular;
-        color: #D1D4DF;
+        font-size: 11rem;
     }
     .actions a{
-        text-decoration: none;
-        user-select: none;
-        color: #8190a4;
         padding: 1rem 2rem;
         font-size: 2rem;
-        margin: 0 1rem;
-        font-weight: 600;
-        border-radius: 2.5rem;
-        background-color:#dee0e6 ;
-        transition: all 0.3s ease-out;
-        box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+        margin: 0 1.5rem; 
+    }
+}
+
+@media(max-width:780px){
+    .main__container{
+        padding: 5% 5%;
+    }
+    .main__timer {
+        font-size: 9rem;
+    }
+    .actions a{
+        padding: 1rem 1.5rem;
+        font-size: 1.5rem;
+        margin: 0 1.5rem;
+    }
+}
+
+@media(max-width:660px){
+    .main__container{
+        padding: 5% 5%;
+    }
+    .main__timer {
+        font-size: 8rem;
+    }
+    .actions a{
+        padding: 1rem 1.4rem;
+        font-size: 1.4rem;
+        margin: 0 1.2rem;  
+    }
+}
+@media(max-width:520px){
+    .main__container{
+        padding: 5% 5%;
+    }
+    .main__timer {
+        font-size: 5.5rem;
+    }
+    .actions a{
+        padding: 1rem 1.2rem;
+        font-size: 1.1rem;
+        margin: 0.5rem; 
     }
 }
