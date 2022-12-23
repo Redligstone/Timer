@@ -24,7 +24,6 @@ body{
     justify-content: center;
     flex-direction: column;
     margin: 0 auto;
-    
 }
 .main__timer {
     
@@ -57,4 +56,35 @@ body{
 .actions a:active{
     opacity: 0.6;
     background-color: #4c5a64;
+}
+
+@media(max-width:560px){
+    .main__container{
+        padding: 5rem 1rem;
+        border-radius: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .main__timer {
+    
+        font-size: 7rem;
+        font-weight: regular;
+        color: #D1D4DF;
+    }
+    .actions a{
+        text-decoration: none;
+        user-select: none;
+        color: #8190a4;
+        padding: 1rem 2rem;
+        font-size: 2rem;
+        margin: 0 1rem;
+        font-weight: 600;
+        border-radius: 2.5rem;
+        background-color:#dee0e6 ;
+        transition: all 0.3s ease-out;
+        box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    }
 }
